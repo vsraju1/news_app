@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VSR-News</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="main-nav container flex">
+        <a href="#" onclick="reload()"><h1 class="company-logo">VSR</h1></a>
+
+        <div class="nav-links">
+          <ul class="flex">
+            <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+            <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+            <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+          </ul>
+        </div>
+        <div class="search-bar flex">
+          <input type="text" id="search-input" class="news-input" placeholder="e.g. Stocks" />
+          <button class="search-button" id="search-button">Search</button>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="cards-container container flex" id="cards-container">
+        
+      </div>
+    </main>
+
+
+    <template id="template-news-card">
+      <div class="card">
+        <div class="card-header">
+          <img src="https://via.placeholder.com/400X200" alt="new-img" id="news-img">
+        </div>
+        <div class="card-content">
+          <h3 id="news-title">This is title</h3>
+          <h6 class="news-source" id="news-source">alwal 02-12-2023</h6>
+          <p class="new-desc" id="news-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima labore recusandae exercitationem eveniet iure omnis suscipit. Iste dolor ipsam praesentium.</p>
+        </div>
+      </div>
+    </template>
+
+
+    <script src="./index.js"></script>
+  </body>
+</html>
